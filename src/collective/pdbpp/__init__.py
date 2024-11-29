@@ -27,7 +27,6 @@ def _do_pp(self, arg):
         self._original_do_pp(arg)
 
 
-
 Pdb._original_do_pp = Pdb.do_pp
 Pdb.do_pp = _do_pp
 
