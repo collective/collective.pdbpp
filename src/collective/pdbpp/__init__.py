@@ -1,7 +1,7 @@
 """Init and utils."""
 
 from AccessControl import Unauthorized
-from pdb import Pdb # type: ignore
+from pdb import Pdb  # type: ignore
 from plone import api
 from Products.Five import BrowserView
 from rich import inspect
@@ -23,10 +23,12 @@ def _do_pp(self, arg):
         obj = self._getval(arg)
         # Use rich's pprint to display the object
         pretty.pprint(obj, expand_all=True)
-    except Exception as e:
-        print(f"[red]Error:[/red] {e}")  # noqa E231
+    except Exception:
+        self._original_do_pp(arg)
 
 
+
+Pdb._original_do_pp = Pdb.do_pp
 Pdb.do_pp = _do_pp
 
 
