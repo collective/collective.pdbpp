@@ -51,8 +51,3 @@ class PdbView(BrowserView):
         breakpoint()
         logging.info("Exiting the interactive session")
         return self.request.response.redirect(self.context.absolute_url())
-
-
-class RaiseView(BrowserView):
-    def __call__(self):
-        raise Exception("This is a test exception")
