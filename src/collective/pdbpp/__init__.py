@@ -1,6 +1,7 @@
 """Init and utils."""
 
 from AccessControl import Unauthorized
+from pdb import Pdb
 from plone import api
 from Products.Five import BrowserView
 from rich import inspect
@@ -13,6 +14,20 @@ import logging
 
 def initialize(context):
     pass
+
+
+def _do_pp(self, arg):
+    """Override the pp (pretty-print) command to use rich."""
+    try:
+        # Evaluate the argument in the current debugging context
+        obj = self._getval(arg)
+        # Use rich's pprint to display the object
+        pretty.pprint(obj, expand_all=True)
+    except Exception as e:
+        print(f"[red]Error:[/red] {e}")  # noqa E231
+
+
+Pdb.do_pp = _do_pp
 
 
 class PdbView(BrowserView):
