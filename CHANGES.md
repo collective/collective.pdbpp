@@ -3,8 +3,7 @@
 
 ## 1.0.0a3 (unreleased)
 
-
-- Nothing changed yet.
+- Add features from rich to make debugging easier.
 
 
 ## 1.0.0a2 (2023-11-27)

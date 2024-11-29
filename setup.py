@@ -51,7 +51,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     python_requires=">=3.8",
-    install_requires=["setuptools", "plone.api", "pdbpp"],
+    install_requires=["setuptools", "plone.api", "pdbpp", "rich"],
     extras_require={
         "test": [
             "plone.app.testing",
