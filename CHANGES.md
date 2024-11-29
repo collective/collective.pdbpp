@@ -1,6 +1,12 @@
 # Changelog
 
 
+## 1.0.0a4 (unreleased)
+
+
+- Nothing changed yet.
+
+
 ## 1.0.0a3 (2024-11-29)
 
 - Add features from rich to make debugging easier.
