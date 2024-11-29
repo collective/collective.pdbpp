@@ -1,7 +1,7 @@
 """Init and utils."""
 
 from AccessControl import Unauthorized
-from pdb import Pdb
+from pdb import Pdb # type: ignore
 from plone import api
 from Products.Five import BrowserView
 from rich import inspect
