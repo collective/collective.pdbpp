@@ -1,7 +1,7 @@
 # Changelog
 
 
-## 1.0.0a5 (unreleased)
+## 1.0.0a5 (2025-03-28)
 
 
 - Do not limit rich output
