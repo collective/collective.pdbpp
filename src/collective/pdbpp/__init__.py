@@ -22,7 +22,7 @@ def initialize(context):
 
 def rich_pprint(obj):
     """Print using rich."""
-    rich.pretty.pprint(obj, expand_all=True, max_length=10, max_string=50)
+    rich.pretty.pprint(obj, expand_all=True)
 
 
 def _do_pp(self, arg):

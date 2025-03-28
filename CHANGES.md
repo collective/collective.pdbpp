@@ -4,7 +4,7 @@
 ## 1.0.0a5 (unreleased)
 
 
-- Nothing changed yet.
+- Do not limit rich output
 
 
 ## 1.0.0a4 (2024-12-18)
