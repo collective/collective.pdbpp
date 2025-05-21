@@ -4,7 +4,7 @@
 ## 1.0.0a6 (unreleased)
 
 
-- Nothing changed yet.
+- Add an `ii` command
 
 
 ## 1.0.0a5 (2025-03-28)
