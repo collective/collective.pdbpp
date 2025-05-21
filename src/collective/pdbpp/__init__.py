@@ -50,22 +50,19 @@ def _do_pp(self, arg):
         self._original_do_pp(arg)
 
 
-def _do_inspect(self, arg):
-    """Override the inspect command to use rich."""
-    try:
-        # Evaluate the argument in the current debugging context
-        obj = self._getval(arg)
-        # Use rich's inspect to display the object
-        rich.inspect(obj)
-    except Exception:
-        self._original_do_inspect(arg)
+def _do_ii(self: Pdb, arg):
+    """Provide a rich inspect command."""
+    # Evaluate the argument in the current debugging context
+    obj = self._getval(arg)
+    # Use rich's inspect to display the object
+    rich.inspect(obj)
 
 
 Pdb._original_do_pp = Pdb.do_pp
 Pdb.do_pp = _do_pp
 
-Pdb._original_do_inspect = Pdb.do_inspect
-Pdb.do_inspect = _do_pp
+Pdb.do_ii = _do_ii
+
 DefaultConfig.sticky_by_default = True
 
 
