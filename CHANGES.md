@@ -1,7 +1,7 @@
 # Changelog
 
 
-## 1.0.0a6 (unreleased)
+## 1.0.0a6 (2025-05-21)
 
 
 - Add an `ii` command
