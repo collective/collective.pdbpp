@@ -4,7 +4,7 @@
 ## 1.0.0a7 (unreleased)
 
 
-- Nothing changed yet.
+- Fix error on Startup when the DefaultConfig is not yet initialized
 
 
 ## 1.0.0a6 (2025-05-21)

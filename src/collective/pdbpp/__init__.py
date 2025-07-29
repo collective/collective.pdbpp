@@ -3,7 +3,7 @@
 from AccessControl import Unauthorized
 from BTrees.IOBTree import IOBTree
 from pdb import Pdb  # type: ignore
-from pdb import DefaultConfig
+from pdbpp import DefaultConfig
 from plone import api
 from plone.browserlayer.utils import registered_layers
 from Products.Five import BrowserView
