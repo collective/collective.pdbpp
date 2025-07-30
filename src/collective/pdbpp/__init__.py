@@ -3,7 +3,6 @@
 from AccessControl import Unauthorized
 from BTrees.IOBTree import IOBTree
 from pdb import Pdb  # type: ignore
-from pdbpp import DefaultConfig
 from plone import api
 from plone.browserlayer.utils import registered_layers
 from Products.Five import BrowserView
@@ -14,6 +13,14 @@ from OFS.SimpleItem import PathReprProvider
 import logging
 import rich
 import rich.pretty
+
+try:
+    from pdbpp import DefaultConfig
+
+    DefaultConfig.sticky_by_default = True
+except ImportError:
+    # This works on recent versions of pdbpp
+    pass
 
 
 def initialize(context):
@@ -62,8 +69,6 @@ Pdb._original_do_pp = Pdb.do_pp
 Pdb.do_pp = _do_pp
 
 Pdb.do_ii = _do_ii
-
-DefaultConfig.sticky_by_default = True
 
 
 class RegisteredLAyers:
