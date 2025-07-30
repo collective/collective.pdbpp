@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0a9 (unreleased)
+
+
+- Nothing changed yet.
+
+
 ## 1.0.0a8 (2025-07-30)
 
 - Fix another error on Startup when the DefaultConfig is not yet initialized
