@@ -70,6 +70,8 @@ Pdb.do_pp = _do_pp
 
 Pdb.do_ii = _do_ii
 
+set_trace = Pdb().set_trace
+
 
 class RegisteredLAyers:
 
@@ -87,6 +89,7 @@ class PdbView(BrowserView):
 
     def __call__(self):
         if not api.env.debug_mode():
+            logging.warning("The @@%s view was called outside debug mode, raising `Unauthorized`", self.__name__)
             raise Unauthorized
 
         locals().update(
