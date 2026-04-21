@@ -1,9 +1,10 @@
 # Changelog
 
-## 1.0.0a9 (unreleased)
+## 1.0.0a9 (2026-04-21)
 
 
-- Nothing changed yet.
+- Add a `set_trace` target
+- Switch to native namespace (PEP 420)
 
 
 ## 1.0.0a8 (2025-07-30)
