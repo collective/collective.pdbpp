@@ -13,7 +13,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.pdbpp",
-    version="1.0.0a9",
+    version="1.0.0a10.dev0",
     description="An addon for Plone that allow you debug your code using the pdbpp package",
     long_description=long_description,
     long_description_content_type="text/markdown",
