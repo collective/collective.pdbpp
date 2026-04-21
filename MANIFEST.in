@@ -2,6 +2,7 @@ graft src/collective
 graft docs
 include *.md
 include *.yaml
+include Makefile
 exclude tox.ini
 exclude *.txt
 global-exclude *.pyc

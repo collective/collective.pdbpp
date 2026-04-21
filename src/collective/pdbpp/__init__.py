@@ -2,13 +2,13 @@
 
 from AccessControl import Unauthorized
 from BTrees.IOBTree import IOBTree
+from OFS.SimpleItem import PathReprProvider
 from pdb import Pdb  # type: ignore
 from plone import api
 from plone.browserlayer.utils import registered_layers
 from Products.Five import BrowserView
 from rich import pretty
 from ZPublisher.HTTPRequest import HTTPRequest
-from OFS.SimpleItem import PathReprProvider
 
 import logging
 import rich
@@ -46,7 +46,8 @@ def _do_pp(self, arg):
         elif isinstance(obj, IOBTree):
             rich_pprint(dict(obj))
         elif obj.__class__.__repr__ in (
-            object.__repr__, PathReprProvider.__repr__,
+            object.__repr__,
+            PathReprProvider.__repr__,
         ):
             # Default repr is too boring
             rich_pprint(obj)
@@ -89,7 +90,10 @@ class PdbView(BrowserView):
 
     def __call__(self):
         if not api.env.debug_mode():
-            logging.warning("The @@%s view was called outside debug mode, raising `Unauthorized`", self.__name__)
+            logging.warning(
+                "The @@%s view was called outside debug mode, raising `Unauthorized`",
+                self.__name__,
+            )
             raise Unauthorized
 
         locals().update(
