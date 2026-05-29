@@ -12,3 +12,5 @@ exclude bobtemplate.cfg
 exclude buildout.cfg
 exclude test_plone52.cfg
 exclude test_plone60.cfg
+recursive-include news *.internal
+recursive-include news *.jinja
