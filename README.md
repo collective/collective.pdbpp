@@ -1,30 +1,35 @@
-[![image](https://github.com/collective/collective.pdbpp/actions/workflows/plone-package.yml/badge.svg)](https://github.com/collective/collective.pdbpp/actions/workflows/plone-package.yml)
+[![CI](https://github.com/collective/collective.pdbpp/actions/workflows/plone-package.yml/badge.svg)](https://github.com/collective/collective.pdbpp/actions/workflows/plone-package.yml)
 [![Coveralls](https://coveralls.io/repos/github/collective/collective.pdbpp/badge.svg?branch=main)](https://coveralls.io/github/collective/collective.pdbpp?branch=main)
-[![image](https://codecov.io/gh/collective/collective.pdbpp/branch/master/graph/badge.svg)](https://codecov.io/gh/collective/collective.pdbpp)
+[![Codecov](https://codecov.io/gh/collective/collective.pdbpp/branch/master/graph/badge.svg)](https://codecov.io/gh/collective/collective.pdbpp)
 [![Latest Version](https://img.shields.io/pypi/v/collective.pdbpp.svg)](https://pypi.python.org/pypi/collective.pdbpp/)
-[![Egg Status](https://img.shields.io/pypi/status/collective.pdbpp.svg)](https://pypi.python.org/pypi/collective.pdbpp)
-![image](https://img.shields.io/pypi/pyversions/collective.pdbpp.svg?style=plastic%20%20%20:alt:%20Supported%20-%20Python%20Versions)
+[![Package Status](https://img.shields.io/pypi/status/collective.pdbpp.svg)](https://pypi.python.org/pypi/collective.pdbpp)
+![Supported Python Versions](https://img.shields.io/pypi/pyversions/collective.pdbpp.svg)
 [![License](https://img.shields.io/pypi/l/collective.pdbpp.svg)](https://pypi.python.org/pypi/collective.pdbpp/)
 
 # collective.pdbpp
 
-An addon for Plone that does allow you to use the [pdbpp](https://github.com/pdbpp/pdbpp) package
+An add-on for Plone that allows you to use [pdbpp](https://github.com/pdbpp/pdbpp).
 
 ## Installation
 
-Install `collective.pdbpp` by adding it to your buildout, e.g.:
+Install `collective.pdbpp` by adding it to your buildout:
 
-    [instance]
-    eggs +=
-        collective.pdbpp
+```ini
+[instance]
+eggs +=
+    collective.pdbpp
+```
 
-and then running `bin/buildout`.
+Then run:
 
-When your instance starts you can enter a pdb session by adding the path `pdb` to any URL, e.g.:
+```bash
+bin/buildout
+```
+
+When your instance starts, you can enter a pdb session by adding the `pdb` path to any URL, for example:
 
 - http://localhost:8080/pdb
 - http://localhost:8080/Plone/pdb
-
 
 ## Authors
 
@@ -38,10 +43,9 @@ Put your name here, you deserve it!
 
 ## Contribute
 
-- Issue Tracker:
-  <https://github.com/collective/collective.pdbpp/issues>
-- Source Code: <https://github.com/collective/collective.pdbpp>
-- Documentation: <https://docs.plone.org/foo/bar>
+- Issue Tracker: https://github.com/collective/collective.pdbpp/issues
+- Source Code: https://github.com/collective/collective.pdbpp
+- Documentation: https://github.com/collective/collective.pdbpp#readme
 
 ## Support
 
@@ -49,4 +53,4 @@ If you are having issues, please let us know in the [issue tracker](https://gith
 
 ## License
 
-The project is licensed under the GPLv2.
+The project is licensed under GPLv2.
