@@ -35,7 +35,7 @@ When your instance starts, you can enter a pdb session by adding the `pdb` path 
 
 When you access the `pdb` path, you will be dropped into a pdb session where you can inspect the state of your application and debug any issues you may be facing.
 You can use all the features of pdbpp, such as syntax highlighting, tab completion, and more.
-In addition you will have Plone specific commands available and enchanced display using the `rich` library.
+In addition you will have Plone specific commands available and enhanced display using the `rich` library.
 
 For example, you will have immediately available `plone.api`:
 ```shell
